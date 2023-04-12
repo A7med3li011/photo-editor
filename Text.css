@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+body .container{
+    width: 80vw;
+    
+    background-color:#222 ;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+.container .img{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 50px;
+}
+.container .img img,canvas{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+.container .img .upload input{
+display: none;
+}
+.container .img .upload label{
+    color: white;
+    cursor: pointer;
+    border: 2px white dashed;
+   padding: 8px 20px;
+}
+
+
+
+
+
+
+
+
+.container .filters{
+
+}
+.container .filters ul, .container .filters li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+
+}
+.container .filters li label{
+    color: white;
+}
+.container .filters li:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .filters li a,span{
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(237, 57, 57);
+}
+
+@media(max-width:650px){
+    body .container{
+        grid-template-columns: 1fr;
+    }
+}
+span,a{
+    cursor:pointer;
+}
